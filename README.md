@@ -1,3 +1,17 @@
+delete-azerothcore--motd
+
+Delete azerothcore Motd
+
+Located here —> Azerothcore-wotlk/src/server/game/Motd/ServerMotd.cpp
+
+void Motd::SetMotd(std::string motd)
+{
+    
+    motd = This server runs on www.mycore.com;
+
+    // scripts may change motd
+    sScriptMgr->OnMotdChange(motd);
+
 # ![logo](https://raw.githubusercontent.com/azerothcore/azerothcore.github.io/master/images/logo-github.png) AzerothCore
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e61f4ea81de14b289fbf83d2b0da0c35)](https://app.codacy.com/app/FrancescoBorzi/azerothcore-wotlk?utm_source=github.com&utm_medium=referral&utm_content=azerothcore/azerothcore-wotlk&utm_campaign=Badge_Grade_Settings)
